@@ -59,8 +59,8 @@ This also demonstrates how the application can be extended with minimal configur
 
 ```bash
 # Clone the repository
-git clone https://github.com/mashimakaito/volkswagen-techTest.git
-cd volkswagen-techTest
+git clone https://github.com/mashimakaito/techTest.git
+cd techTest
 
 # Run the project
 ./mvnw spring-boot:run
