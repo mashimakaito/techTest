@@ -49,25 +49,22 @@ public class CreateFactoryRoutesService implements CreateFactoryRoutesUseCase {
         List<Robot> sortedRobotList = robots.stream()
                 .sorted(Comparator.comparingInt(Robot::getOrderId))
                 .collect(Collectors.toList());
+        
         boolean progressMade;
 
         do {
             progressMade = false;
-            List<Robot> stillBlocked = new ArrayList<>();
 
             for (Robot robot : sortedRobotList) {
                 int initAction = robot.getCurrentActionIndex();
                 robotCommander.executeActions(routesMatrix, robot);
 
-                if (robot.getCurrentActionIndex() == initAction) {
-                    stillBlocked.add(robot);
-                } else {
+                if (robot.getCurrentActionIndex() > initAction) {
                     progressMade = true;
                 }
             }
 
-            robots = stillBlocked;
-        } while (progressMade && !robots.isEmpty());
+        } while (progressMade);
 
         return routesMatrix.getRobotsPositionString();
     }
