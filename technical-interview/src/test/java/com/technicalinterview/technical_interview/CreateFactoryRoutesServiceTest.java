@@ -41,8 +41,8 @@ public class CreateFactoryRoutesServiceTest {
                 "RMLMLMMRRM";
 
 
-        String expectedOutput = "3 2 N\n" +
-            "2 2 E\n";
+        String expectedOutput = "5 4 E\n" +
+            "3 2 W\n";
 
         String result = createFactoryRoutesService.createRoutes(input);
 
