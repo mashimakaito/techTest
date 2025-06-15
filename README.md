@@ -60,7 +60,7 @@ This also demonstrates how the application can be extended with minimal configur
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/mashimakaito/volkswagen-techTest.git
 cd your-repo-name
 
 # Run the project
