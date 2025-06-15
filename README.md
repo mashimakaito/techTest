@@ -1,5 +1,4 @@
-![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEYXuuAFa71aZb9oQoRhSZBsebRHlYXlecQw&s)
-# Volkswage Digital:Hub Technical Challenge
+# Technical Challenge
 
 ## Author
 **Name:** Jose Francisco Aguilera Oliver\
