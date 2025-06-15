@@ -21,11 +21,11 @@
 ### Architecture & Design
 I applied an Hexagonal Arquitecture, using Domain Driven Design principles, to promote a clean separation between the core business logic and the external data from other sources. The arquitecture used in this challenge is conformed by:
 
-    | Application    | Domain  | Infrastructure |
-    | -----------    |:-------:|:--------------:|
-    | Service        | Model   | Port(in)       |
-    | Domain         | Service | Adapter(in)    |
-    | Infrastructure | -       | -              |
+| Application    | Domain  | Infrastructure |
+| -----------    |:-------:|:--------------:|
+| Service        | Model   | Port(in)       |
+| Domain         | Service | Adapter(in)    |
+| Infrastructure | -       | -              |
 
 
  * Infrastructure: manages external communication and system-level concerns. In the context of this challenge, I introduced the infrastructure layer to handle the filtering of input string data. This separation promotes cleaner architecture by isolating rolow-level operations fm business logic. Additionally, it enhances the application's scalability and maintainability due to the fact that future integrations, such as I/O operations, database connections, or third-party services, can be added.
